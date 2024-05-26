@@ -2,18 +2,16 @@
 <html>
 <head>
     <title>WebAR Example</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.6/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body style="margin: 0px; overflow: hidden;">
-    <a-scene embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
-        <a-marker preset="barcode">
-            <a-entity position="0 0 0">
-                <a-image src="https://raw.githubusercontent.com/123qwertR/Test-ar/master-branch/image/1.jpeg" position="-1 0 0" width="1" height="1"></a-image>
-                <a-image src="https://raw.githubusercontent.com/123qwertR/Test-ar/master-branch/image/2.jpeg" position="1 0 0" width="1" height="1"></a-image>
-                <a-image src="https://raw.githubusercontent.com/123qwertR/Test-ar/master-branch/image/3.jpeg" position="0 0 -1" width="1" height="1"></a-image>
-                <a-image src="https://raw.githubusercontent.com/123qwertR/Test-ar/master-branch/image/4.jpeg" position="0 0 1" width="1" height="1"></a-image>
-            </a-entity>
+    <a-scene embedded arjs="trackingMethod: best;">
+        <a-marker preset="custom">
+            <a-image src="https://username.github.io/repositoryname/path-to-your-image1.jpg" position="-1 0 0" width="1" height="1"></a-image>
+            <a-image src="https://username.github.io/repositoryname/path-to-your-image2.jpg" position="1 0 0" width="1" height="1"></a-image>
+            <a-image src="https://username.github.io/repositoryname/path-to-your-image3.jpg" position="3 0 0" width="1" height="1"></a-image>
+            <a-image src="https://username.github.io/repositoryname/path-to-your-image4.jpg" position="5 0 0" width="1" height="1"></a-image>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
